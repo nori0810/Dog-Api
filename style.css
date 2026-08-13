@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #f7f3ed;
+    color: #333;
+}
+
+.content {
+    width: min(90%, 600px);
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* 犬の画像 */
+.image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ボタン */
+#button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b6f47;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#button:hover {
+    background-color: #6f5636;
+}
+
+#button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* ローディング */
+#loading {
+    display: none;
+    margin-top: 20px;
+    color: #777;
+}
+
+/* エラー */
+#error {
+    margin-top: 20px;
+    color: #d9534f;
+}
+
+/* スマホ */
+@media (max-width: 600px) {
+    .content {
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .image {
+        height: 300px;
+    }
+}
