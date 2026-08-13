@@ -1,0 +1,19 @@
+# Dog API App
+
+Dog APIを利用して、ランダムな犬の画像を表示するWebアプリです。
+
+## 使用技術
+
+- HTML
+- CSS
+- JavaScript
+- Dog API
+
+## 学習したこと
+
+- fetch()によるAPI通信
+- async / await
+- JSONデータの取得
+- DOM操作
+- addEventListener
+- try / catchによるエラー処理
